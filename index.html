@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  name="viewport" content="width=device-width, initial-scale=1">
+	<title>С Новым Годом и Рождеством!</title>
+	<link rel="stylesheet" type="text/css" href="test.css">
+	<script src="test.js"></script>
+	
+</head>
+<body>
+<iframe frameborder="0" style="border:none;width:100%;height:100px;" width="100%" height="100" src="https://music.yandex.ru/iframe/#track/513811/55074/hide/cover/black/#2d7907/">Слушайте <a href='https://music.yandex.ru/album/55074/track/513811'>We Wish You A Merry Christmas</a> — <a href='https://music.yandex.ru/artist/34230'>Enya</a> на Яндекс.Музыке</iframe>
+<style type="text/css">
+    #garland {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        background-image: url('http://getsuper.ru/templates/-/js/girr/christmas-lights.png');
+        height: 36px;
+        width: 100%;
+        overflow: hidden;
+    }
+    #nums_1 {
+        padding: 100px
+    }
+    .garland_1 {
+        background-position: 0 0
+    }
+    .garland_2 {
+        background-position: 0 -36px
+    }
+    .garland_3 {
+        background-position: 0 -72px
+    }
+    .garland_4 {
+        background-position: 0 -108px
+    }
+</style>
+<div id="garland" class="garland_4"><div id="nums_1">1</div></div>
+<script type="text/javascript">
+    function garland() {
+        nums = document.getElementById('nums_1').innerHTML
+        if(nums == 1) {document.getElementById('garland').className='garland_1';document.getElementById('nums_1').innerHTML='2'}
+        if(nums == 2) {document.getElementById('garland').className='garland_2';document.getElementById('nums_1').innerHTML='3'}
+        if(nums == 3) {document.getElementById('garland').className='garland_3';document.getElementById('nums_1').innerHTML='4'}
+        if(nums == 4) {document.getElementById('garland').className='garland_4';document.getElementById('nums_1').innerHTML='1'}
+    }
+    setInterval(function(){garland()}, 600)
+</script>
+
+
+<h1 id="jittery">Поздравляем с Новым Годом и Рождеством!</h1>
+<div class="message"> 
+	<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+</div>
+<h2>Желаем Вам крепкого, <em>как крещенские морозы здоровья, </em> <br> Высокой,<em>как Кремлевская елка зарплаты </em> <br> И игристого, <em>как праздничное шампанское настроения.</em> <br> <br>Пусть любовь, богатство и удача навсегда поселятся в вашем доме, а проблемы и печали ни когда не смогут найти к нему дорогу. <br/>С Праздником!</h2>
+</div>
+<div class="santa"></div>
+&#169;<a href="https://github.com/VolkovAnton">Volkov Anton</a>
+<a href="https://codepen.io/zerospree/">Codrin Pavel</a>
+</body>
+</html>
